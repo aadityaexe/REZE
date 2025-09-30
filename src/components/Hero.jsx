@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 // 1. Import the SplitText plugin
 import { SplitText } from "gsap/SplitText";
-import RezeLm from "../assets/rezeLm.jpg";
-import RezeSm from "../assets/rezeSm.jpg";
+import RezeLm from "../assets/RezeLm.jpg";
+import RezeSm from "../assets/RezeSm.jpg";
 
 // 2. Register the plugin with GSAP
 gsap.registerPlugin(SplitText);
