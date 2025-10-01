@@ -5,14 +5,18 @@ import RezeBio from "./components/RezeBio";
 import Makima from "./components/Makima";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
-
+import ChainsawQuotes from "./components/ChainsawQuotes";
+import RezeChildhood from "./components/RezeChildhood";
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
       <RezeBio />
+      <ChainsawQuotes />
+      <RezeChildhood />
       <Makima />
+
       <FAQ />
       <Footer />
     </div>
