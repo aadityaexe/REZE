@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Logo / Name */}
         <div className="mb-8 md:mb-0 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-extrabold text-red-500">
-            Reze Fan Page
+            Reze.
           </h1>
           <p className="text-gray-400 mt-3 text-lg md:text-xl">
             Celebrating the deadly charm of Reze from Chainsaw Man.
