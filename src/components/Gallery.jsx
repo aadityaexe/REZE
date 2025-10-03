@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import tg1 from "../assets/Reze.jpg";
+import tg1 from "../assets/Reze0.jpg";
 import tg2 from "../assets/Reze1.jpg";
 import tg3 from "../assets/Reze2.jpg";
 import tg4 from "../assets/Reze3.jpg";
