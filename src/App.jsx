@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 import ChainsawQuotes from "./components/ChainsawQuotes";
 import RezeChildhood from "./components/RezeChildhood";
+import Gallery from "./components/gallery";
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
       <RezeBio />
       <ChainsawQuotes />
       <RezeChildhood />
+      <Gallery />
       <Makima />
 
       <FAQ />
