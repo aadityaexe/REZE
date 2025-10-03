@@ -7,16 +7,12 @@ export default function RezeBio() {
   const headingRef = useRef(null);
   const paraRef = useRef(null);
   const quoteRef = useRef(null);
-
   useEffect(() => {
     gsap.registerPlugin(SplitText);
-
     const splitHeading = new SplitText(headingRef.current, { type: "chars" });
     const splitPara = new SplitText(paraRef.current, { type: "words" });
     const splitQuote = new SplitText(quoteRef.current, { type: "chars" });
-
     const tl = gsap.timeline({ delay: 0.5 });
-
     tl.from(splitHeading.chars, {
       opacity: 0,
       y: 50,
@@ -47,7 +43,6 @@ export default function RezeBio() {
         "-=0.3"
       );
   }, []);
-
   return (
     <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 bg-[#F2F6F7] gap-10">
       {/* Image */}
@@ -58,7 +53,6 @@ export default function RezeBio() {
           className="  h-full hover:scale-105 transition-transform duration-500"
         />
       </div>
-
       {/* Text Content */}
       <div className="max-w-2xl text-center md:text-left">
         <h1
