@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 import ChainsawQuotes from "./components/ChainsawQuotes";
 import RezeChildhood from "./components/RezeChildhood";
-import Gallery from "./components/gallery";
+import Gallery from "./components/Gallery";
 const App = () => {
   return (
     <div>
