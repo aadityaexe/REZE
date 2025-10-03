@@ -168,7 +168,7 @@ const Gallery = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-red-500">
           An Explosive Tribute to Reze
         </h2>
-        <p className="text-lg md:text-xl text-gray-900 mt-2">
+        <p className="text-xl md:text-2xl text-gray-900 mt-2">
           A Fan Page Dedicated to the Bomb Devil
         </p>
       </div>
