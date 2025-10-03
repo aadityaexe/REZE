@@ -40,7 +40,7 @@ export default function Makima({
   return (
     <section ref={containerRef} className="py-12 px-4">
       <h2 className="text-6xl text-center font-bold mb-6">
-        Makima KI MAKI CHUT
+        Makima Will Hunt You Down.
       </h2>
 
       <p className="max-w-6xl mx-auto mt-6 mb-5 text-4xl text-gray-700 text-center">

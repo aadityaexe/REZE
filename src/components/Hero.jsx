@@ -78,7 +78,11 @@ export default function Hero() {
         <div className="mt-8 space-y-6 text-center md:mt-0 md:w-1/2 md:pl-20 md:text-right">
           {/* Note: The p tag will also be targeted by SplitText */}
           <p className="text-4xl font-extrabold leading-snug hero-text md:text-5xl">
-            Makima ki ma ki chut
+            Makima will hunt you down.
+          </p>
+          <p className="text-2xl ">
+            Stay still, darling… I like watching you squirm before I decide if
+            you deserve to survive… or if I just want to keep you for myself.
           </p>
         </div>
       </div>
