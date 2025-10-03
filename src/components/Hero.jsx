@@ -77,7 +77,7 @@ export default function Hero() {
         {/* Right side text */}
         <div className="mt-8 space-y-6 text-center md:mt-0 md:w-1/2 md:pl-20 md:text-right">
           {/* Note: The p tag will also be targeted by SplitText */}
-          <p className=" text-2xl font-extrabold leading-snug hero-text md:text-4xl whitespace-nowrap">
+          <p className=" text-4xl font-extrabold leading-snug hero-text md:text-4xl whitespace-nowrap">
             Makima will hunt you down.
           </p>
           <p className="text-2xl ">
