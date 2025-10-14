@@ -44,7 +44,10 @@ export default function RezeBio() {
       );
   }, []);
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 bg-[#F2F6F7] gap-10">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 bg-[#F2F6F7] gap-10"
+    >
       {/* Image */}
       <div className="flex-shrink-0 h-96 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg">
         <img

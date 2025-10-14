@@ -154,7 +154,7 @@ const Gallery = () => {
         ease: "power3.out",
         stagger: 0.15,
         scrollTrigger: {
-          trigger: "#torture-gallery",
+          trigger: "#gallery",
           start: "top 80%",
         },
       }
@@ -162,7 +162,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section id="torture-gallery" className="py-16 px-4 text-white">
+    <section id="gallery" className="py-16 px-4 text-white">
       {/* --- TEXT UPDATED HERE --- */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-red-500">

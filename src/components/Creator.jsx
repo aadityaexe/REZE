@@ -14,7 +14,10 @@ export default function Creator() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8">
+    <div
+      id="creator"
+      className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8"
+    >
       <h1 className="text-3xl font-bold mb-8 text-gray-800">
         About the Creators
       </h1>

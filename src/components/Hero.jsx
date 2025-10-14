@@ -44,6 +44,7 @@ export default function Hero() {
 
   return (
     <section
+      id="hero"
       ref={containerRef}
       className="relative min-h-screen overflow-hidden"
     >

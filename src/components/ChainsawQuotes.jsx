@@ -77,7 +77,7 @@ export default function ChainsawQuotes() {
   }, []); // Run this effect only once on component mount
 
   return (
-    <>
+    <div id="quotes" className="flex flex-col items-center justify-center p-8">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-gray-900 tracking-tight">
         Quotes
       </h1>
@@ -94,6 +94,6 @@ export default function ChainsawQuotes() {
           {quotes[index]}
         </h1>
       </div>
-    </>
+    </div>
   );
 }

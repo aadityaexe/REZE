@@ -10,24 +10,39 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo / Title */}
-        <div className="text-white text-2xl font-extrabold tracking-wide">
-          REZE<span className="text-purple-500">.</span>
-        </div>
+        <a href="#hero">
+          {" "}
+          <div className="text-white text-2xl font-extrabold tracking-wide">
+            REZE<span className="text-purple-500">.</span>
+          </div>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-white font-medium">
-          <li className="hover:text-purple-500 transition-colors cursor-pointer">
-            Home
-          </li>
-          <li className="hover:text-purple-500 transition-colors cursor-pointer">
-            About
-          </li>
-          <li className="hover:text-purple-500 transition-colors cursor-pointer">
-            Gallery
-          </li>
-          <li className="hover:text-purple-500 transition-colors cursor-pointer">
-            Contact
-          </li>
+          <a href="#hero">
+            {" "}
+            <li className="hover:text-purple-500 transition-colors cursor-pointer">
+              Home
+            </li>
+          </a>
+          <a href="#about">
+            {" "}
+            <li className="hover:text-purple-500 transition-colors cursor-pointer">
+              About
+            </li>
+          </a>
+          <a href="#gallery">
+            {" "}
+            <li className="hover:text-purple-500 transition-colors cursor-pointer">
+              Gallery
+            </li>
+          </a>
+          <a href="#creator">
+            {" "}
+            <li className="hover:text-purple-500 transition-colors cursor-pointer">
+              Creator
+            </li>
+          </a>
         </ul>
 
         {/* Mobile Toggle */}
@@ -43,18 +58,30 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-black/90 backdrop-blur-md">
           <ul className="flex flex-col items-center space-y-6 py-6 text-white font-medium">
-            <li className="hover:text-red-500 transition-colors cursor-pointer">
-              Home
-            </li>
-            <li className="hover:text-red-500 transition-colors cursor-pointer">
-              About
-            </li>
-            <li className="hover:text-red-500 transition-colors cursor-pointer">
-              Gallery
-            </li>
-            <li className="hover:text-red-500 transition-colors cursor-pointer">
-              Contact
-            </li>
+            <a href="#hero">
+              {" "}
+              <li className="hover:text-red-500 transition-colors cursor-pointer">
+                Home
+              </li>
+            </a>
+            <a href="#about">
+              {" "}
+              <li className="hover:text-red-500 transition-colors cursor-pointer">
+                About
+              </li>
+            </a>
+            <a href="#gallery">
+              {" "}
+              <li className="hover:text-red-500 transition-colors cursor-pointer">
+                Gallery
+              </li>
+            </a>
+            <a href="#creator">
+              {" "}
+              <li className="hover:text-red-500 transition-colors cursor-pointer">
+                Creator
+              </li>
+            </a>
           </ul>
         </div>
       )}
