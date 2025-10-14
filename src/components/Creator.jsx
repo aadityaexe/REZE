@@ -1,5 +1,5 @@
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import adityaImg from "../assets/Reze0.jpg";
+import adityaImg from "../assets/adityaImg.jpg";
 import keshavImg from "../assets/Reze1.jpg";
 
 export default function Creator() {
@@ -11,13 +11,6 @@ export default function Creator() {
       instagram: "https://www.instagram.com/adityakumar.01/",
       twitter: "https://x.com/aadityakumar_01",
     },
-    {
-      name: "Keshav",
-      img: keshavImg,
-      bio: "Visual curator and image specialist who brings creativity to life through stunning visual collections.",
-      instagram: "https://www.instagram.com/keshavkumar7833/",
-      twitter: "https://x.com/keshavbot",
-    },
   ];
 
   return (
@@ -26,7 +19,7 @@ export default function Creator() {
         About the Creators
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-8 w-full max-w-5xl">
+      <div className=" gap-8 w-full max-w-5xl">
         {creators.map((creator, index) => (
           <div
             key={index}
