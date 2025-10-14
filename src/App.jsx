@@ -8,6 +8,7 @@ import FAQ from "./components/FAQ";
 import ChainsawQuotes from "./components/ChainsawQuotes";
 import RezeChildhood from "./components/RezeChildhood";
 import Gallery from "./components/Gallery";
+import Creator from "./components/Creator";
 const App = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const App = () => {
       <RezeChildhood />
       <Gallery />
       <Makima />
-
+      <Creator />
       <FAQ />
       <Footer />
     </div>
