@@ -78,7 +78,7 @@ export default function ChainsawQuotes() {
 
   return (
     <div id="quotes" className="flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl md:text-6xl font-extrabold text-center text-gray-900 tracking-tight">
+      <h1 className="text-5xl md:text-7xl font-extrabold text-center text-gray-900 tracking-tight">
         Quotes
       </h1>
 
@@ -89,7 +89,7 @@ export default function ChainsawQuotes() {
         <h1
           ref={textRef}
           key={index} // Key is crucial for React to remount the component on change
-          className="text-2xl md:text-4xl font-bold text-center leading-relaxed"
+          className="text-3xl md:text-5xl font-bold text-center leading-relaxed"
         >
           {quotes[index]}
         </h1>

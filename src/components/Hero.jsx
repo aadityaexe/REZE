@@ -70,16 +70,17 @@ export default function Hero() {
         {/* Left side text */}
         <div className="text-white text-center sm:mt-6 md:max-w-72 md:mt-0 md:text-left">
           {/* Note: The h1 tag will be targeted by SplitText */}
-          <h1 className="text-5xl font-extrabold leading-snug hero-text md:text-6xl">
-            Reze ham sarminda hai, tumhare katill jinda hai
+          <h1 className="text-7xl  leading-snug hero-text ">
+            Reze ham sarminda hai, <br />
+            tumhare katill jinda hai
           </h1>
         </div>
 
         {/* Right side text */}
         <div className="mt-8 space-y-6 text-center md:mt-0 md:w-1/2 md:pl-20 md:text-right">
           {/* Note: The p tag will also be targeted by SplitText */}
-          <p className=" text-4xl font-extrabold leading-snug hero-text md:text-4xl whitespace-nowrap">
-            Makima will hunt you down.
+          <p className=" text-4xl  leading-snug hero-text md:text-4xl ">
+            Makima will <br /> hunt you down.
           </p>
           <p className="text-2xl ">
             Stay still, darling… I like watching you squirm before I decide if
