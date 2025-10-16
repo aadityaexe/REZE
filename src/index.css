@@ -7,3 +7,53 @@ html {
 body {
   background-color: #F2F6F7;
 }
+
+/* Step 1: Define all three fonts */
+@font-face {
+  font-family: 'FontOne';
+  src: url('../public/fonts/NoctraDrip-SolidMelt.ttf');
+
+}
+
+@font-face {
+  font-family: 'FontTwo';
+
+  src: url('../public/fonts/Lucy\ Said\ Ok\ Personal\ Use.ttf');
+
+}
+
+@font-face {
+  font-family: 'FontThree';
+  src: url('../public/fonts/Street\ Master\ Shadow.otf');
+
+}
+
+/* Step 2: Apply fonts strategically */
+body {
+  font-family: 'FontOne', sans-serif;
+  /* Main content font */
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'FontTwo', serif;
+  /* Headings */
+  letter-spacing: 1px;
+}
+
+button,
+.highlight {
+  font-family: 'FontThree', cursive;
+  /* Accents or highlights */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'FontOne', sans-serif;
+}

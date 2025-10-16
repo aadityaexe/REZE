@@ -87,7 +87,7 @@ export default function RezeChildhood({ className = "" }) {
           />
 
           <div className="text-center md:text-left">
-            <h2 className="mb-2 text-3xl font-extrabold leading-tight text-white">
+            <h2 className="mb-2 text-3xl  leading-tight text-white">
               Reze — A Childhood in Rust and Salt
             </h2>
             <p className="mb-4 max-w-2xl text-xl opacity-90 text-white/80">

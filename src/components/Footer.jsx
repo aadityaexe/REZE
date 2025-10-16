@@ -68,7 +68,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="mt-6 text-center text-gray-500 text-sm md:text-base">
         &copy; {new Date().getFullYear()} Reze . All rights consumed by
-        obsession.
+        obsession & <span className="text-red-900">LUST</span>.
       </div>
     </footer>
   );
