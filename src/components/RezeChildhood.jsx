@@ -87,7 +87,7 @@ export default function RezeChildhood({ className = "" }) {
           />
 
           <div className="text-center md:text-left">
-            <h2 className="mb-2 text-3xl  leading-tight text-white">
+            <h2 className="mb-2 text-3xl  leading-tight text-blue-700">
               Reze — A Childhood in Rust and Salt
             </h2>
             <p className="mb-4 max-w-2xl text-xl opacity-90 text-white/80">
@@ -111,10 +111,10 @@ export default function RezeChildhood({ className = "" }) {
             className="flex flex-col rounded-xl bg-gradient-to-b from-neutral-900/60 to-neutral-900/20 p-5 shadow-lg"
           >
             <header className="mb-3">
-              <div className="text-sm font-semibold uppercase tracking-widest text-pink-400/80">
+              <div className="text-sm font-semibold uppercase tracking-widest text-pink-900/80">
                 {item.age}
               </div>
-              <h3 className="text-xl font-bold leading-tight text-white">
+              <h3 className="text-xl font-bold leading-tight text-pink-300">
                 {item.title}
               </h3>
             </header>

@@ -60,7 +60,7 @@ export default function RezeBio() {
       <div className="max-w-2xl text-center md:text-left">
         <h1
           ref={headingRef}
-          className="text-4xl md:text-6xl font-extrabold text-gray-800 tracking-tight"
+          className="text-4xl md:text-6xl font-extrabold text-purple-700 tracking-tight"
         >
           Reze – The Bomb Girl
         </h1>
@@ -69,16 +69,16 @@ export default function RezeBio() {
           className="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed"
         >
           Reze is one of the most mysterious and captivating characters from
-          <span className="font-semibold"> Chainsaw Man</span>. Behind her sweet
-          smile and innocent charm hides a lethal assassin, known as the Bomb
-          Devil’s hybrid. She dances between tenderness and destruction with
-          ease, embodying both love and tragedy. Her presence in the story is
-          short but unforgettable, leaving fans torn between admiration and
-          heartbreak.
+          <span className="font-semibold text-red-800"> Chainsaw Man</span>.
+          Behind her sweet smile and innocent charm hides a lethal assassin,
+          known as the Bomb Devil’s hybrid. She dances between tenderness and
+          destruction with ease, embodying both love and tragedy. Her presence
+          in the story is short but unforgettable, leaving fans torn between
+          admiration and heartbreak.
         </p>
         <p
           ref={quoteRef}
-          className="mt-8 text-xl italic font-semibold text-gray-900"
+          className="mt-8 text-xl italic font-semibold text-green-300"
         >
           “Love is just another kind of bomb—beautiful, deceptive, and
           guaranteed to blow you apart.”

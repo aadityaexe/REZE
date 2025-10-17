@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         {/* Logo / Name */}
         <div className="mb-8 md:mb-0 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-red-500">
+          <h1 className="text-3xl md:text-6xl font-extrabold text-blue-700">
             Reze.
           </h1>
-          <p className="text-gray-400 mt-3 text-lg md:text-xl">
+          <p className="text-purple-600 mt-3 text-lg md:text-xl">
             Celebrating the deadly charm of Reze from Chainsaw Man.
           </p>
         </div>

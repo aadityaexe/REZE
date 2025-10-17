@@ -68,7 +68,7 @@ export default function Hero() {
       `}
       >
         {/* Left side text */}
-        <div className="text-white text-center sm:mt-6 md:max-w-72 md:mt-0 md:text-left">
+        <div className="text-red-500 text-center sm:mt-6 md:max-w-72 md:mt-0 md:text-left">
           {/* Note: The h1 tag will be targeted by SplitText */}
           <h1 className="text-7xl  leading-snug hero-text ">
             Reze ham sarminda hai, <br />

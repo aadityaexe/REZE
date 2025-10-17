@@ -31,12 +31,12 @@ export default function Creator() {
             <img
               src={creator.img}
               alt={creator.name}
-              className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-gray-200 shadow-sm"
+              className="w-44 h-44 object-cover rounded-full mx-auto mb-4 border-4 border-gray-200 shadow-sm"
             />
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-4xl font-semibold text-purple-900 mb-2">
               {creator.name}
             </h2>
-            <p className="text-gray-600 mb-4">{creator.bio}</p>
+            <p className="text-emerald-600 mb-4">{creator.bio}</p>
             <div className="flex justify-center gap-6">
               <a
                 href={creator.twitter}

@@ -39,11 +39,11 @@ export default function Makima({
 
   return (
     <section ref={containerRef} className="py-12 px-4">
-      <h2 className="text-6xl text-center font-bold mb-6">
+      <h2 className="text-6xl text-center text-yellow-700 font-bold mb-6">
         Makima Will Hunt You Down.
       </h2>
 
-      <p className="max-w-6xl mx-auto mt-6 mb-5 text-4xl text-gray-700 text-center">
+      <p className="max-w-6xl mx-auto mt-6 mb-5 text-4xl text-orange-900 text-center">
         Stay still, darling… I like watching you squirm before I decide if you
         deserve to survive… or if I just want to keep you for myself.
       </p>
@@ -80,7 +80,7 @@ export default function Makima({
         </article>
       </div>
 
-      <p className="max-w-6xl mx-auto mt-6 text-4xl text-gray-700 text-center">
+      <p className="max-w-6xl mx-auto mt-6 text-4xl text-orange-600 text-center">
         Careful… getting too close to me might just make you yourselves
         disappear… but damn, watching you squirm is delicious.
       </p>

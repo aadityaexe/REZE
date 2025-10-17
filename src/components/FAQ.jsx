@@ -178,7 +178,7 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  <h3 className="text-xl md:text-2xl font-semibold text-black">
+                  <h3 className="text-xl md:text-2xl font-semibold text-emerald-500">
                     {faq.question}
                   </h3>
                   {isOpen ? (
@@ -211,7 +211,7 @@ export default function FAQ() {
           <div className="text-center mt-10">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+              className="bg-white text-blue-200 font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2  "
             >
               {showAll ? "See Less" : "See More"}
             </button>
