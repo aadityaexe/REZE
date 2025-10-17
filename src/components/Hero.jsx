@@ -79,10 +79,10 @@ export default function Hero() {
         {/* Right side text */}
         <div className="mt-8 space-y-6 text-center md:mt-0 md:w-1/2 md:pl-20 md:text-right">
           {/* Note: The p tag will also be targeted by SplitText */}
-          <p className=" text-4xl  leading-snug hero-text md:text-4xl ">
+          <p className=" text-4xl hidden md:block  leading-snug hero-text md:text-4xl ">
             Makima will <br /> hunt you down.
           </p>
-          <p className="text-2xl ">
+          <p className="text-2xl hidden md:block  leading-snug hero-text md:text-2xl ">
             Stay still, darling… I like watching you squirm before I decide if
             you deserve to survive… or if I just want to keep you for myself.
           </p>

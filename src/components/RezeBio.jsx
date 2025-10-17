@@ -49,11 +49,11 @@ export default function RezeBio() {
       className="flex flex-col md:flex-row items-center justify-center pt-14 pb-10 px-6 bg-[#F2F6F7] gap-10"
     >
       {/* Image */}
-      <div className="flex-shrink-0 h-96 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+      <div className="flex-shrink-0 h-96 w-auto md:w-auto md:h-96 rounded-2xl overflow-hidden shadow-lg">
         <img
           src={RezeImg}
           alt="Reze"
-          className="  h-full hover:scale-105 transition-transform duration-500"
+          className="  h-full  hover:scale-105 transition-transform duration-500"
         />
       </div>
       {/* Text Content */}
