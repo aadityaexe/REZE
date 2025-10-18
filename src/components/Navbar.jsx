@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-purple-600 focus:outline-none"
           onClick={toggleMenu}
         >
           {open ? <X size={28} /> : <Menu size={28} />}
