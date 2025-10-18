@@ -11,13 +11,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo / Title */}
         <a href="#hero">
-          <div className="text-purple-600 text-2xl font-extrabold tracking-wide p-4 pl-7 pr-7 rounded-lg bg-black/70 backdrop-blur-md border-b border-white/10">
+          <div className="text-purple-600 text-2xl font-extrabold tracking-wide p-4 pl-7 pr-7 rounded-lg bg-black/200 backdrop-blur-md border-b border-white/10">
             REZE<span className="text-green-300">.</span>
           </div>
         </a>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 p-4 rounded-lg text-green-300 font-medium bg-black/70 backdrop-blur-md border-b border-white/10">
+        <ul className="hidden md:flex space-x-8 p-4 rounded-lg text-green-300 font-medium bg-black/200 backdrop-blur-md border-b border-white/10">
           <a href="#hero">
             <li className="hover:text-purple-500 transition-colors cursor-pointer">
               Home
