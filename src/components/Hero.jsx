@@ -79,7 +79,7 @@ export default function Hero() {
           <p className=" text-4xl hidden md:block  leading-snug hero-text md:text-4xl ">
             Makima will hunt you down.
           </p>
-          <p className="text-2xl hidden md:block  md:text-2xl text-pink-400 ">
+          <p className="text-2xl hidden md:block  leading-snug hero-text  md:text-2xl text-pink-400 ">
             Stay still, darling… I like watching you squirm before I decide if
             you deserve to survive… or if I just want to keep you for myself.
           </p>
