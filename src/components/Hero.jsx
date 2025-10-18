@@ -12,33 +12,31 @@ export default function Hero() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // Use a GSAP context for safe cleanup
-    let ctx = gsap.context(() => {
-      // 3. Create a new SplitText instance
-      // We are splitting by characters ('chars')
+    // ✅ Use GSAP context for scoped animations and clean teardown
+    const ctx = gsap.context(() => {
+      // ✅ Create SplitText instance
       const split = new SplitText(".hero-text", {
-        type: "chars",
-        charsClass: "char-style", // Optional: add a class to each character
+        type: "chars, words",
+        charsClass: "char-style inline-block",
       });
 
+      // ✅ Timeline for smooth entry
       const tl = gsap.timeline({
-        defaults: { duration: 1, ease: "expo.out" },
+        defaults: { ease: "expo.out" },
       });
 
-      // 4. Animate the characters from the split instance
-      tl.from(
-        split.chars, // Target the characters array
-        {
-          y: 100,
-          opacity: 0,
-          stagger: 0.05, // Stagger the animation for each character
-          duration: 1.5,
-        },
-        "+=0.5"
-      );
+      tl.from(split.chars, {
+        y: 80,
+        opacity: 0,
+        stagger: 0.04,
+        duration: 1.2,
+      });
+
+      // Optional bounce or fade-out, if needed later
+      // tl.to(split.chars, { opacity: 0, y: -20, stagger: 0.03 });
     }, containerRef);
 
-    // Cleanup function
+    // ✅ Cleanup SplitText and revert GSAP context
     return () => ctx.revert();
   }, []);
 
@@ -71,8 +69,7 @@ export default function Hero() {
         <div className="text-red-500 text-center sm:mt-6 md:max-w-72 md:mt-0 md:text-left">
           {/* Note: The h1 tag will be targeted by SplitText */}
           <h1 className="text-7xl  leading-snug hero-text ">
-            Reze ham sarminda hai, <br />
-            tumhare katill jinda hai
+            Reze ham sarminda hai, tumhare katill jinda hai
           </h1>
         </div>
 
@@ -80,9 +77,9 @@ export default function Hero() {
         <div className="mt-8 space-y-6 text-center md:mt-0 md:w-1/2 md:pl-20 md:text-right">
           {/* Note: The p tag will also be targeted by SplitText */}
           <p className=" text-4xl hidden md:block  leading-snug hero-text md:text-4xl ">
-            Makima will <br /> hunt you down.
+            Makima will hunt you down.
           </p>
-          <p className="text-2xl hidden md:block  leading-snug hero-text md:text-2xl ">
+          <p className="text-2xl hidden md:block  md:text-2xl text-pink-400 ">
             Stay still, darling… I like watching you squirm before I decide if
             you deserve to survive… or if I just want to keep you for myself.
           </p>
