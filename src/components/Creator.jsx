@@ -1,7 +1,7 @@
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import adityaImg from "../assets/adityaImg.jpg";
-import keshavImg from "../assets/Reze1.jpg";
-
+import keshavImg from "../assets/keshavImg.jpg";
+import twoImg from "../assets/two.jpg";
 export default function Creator() {
   const creators = [
     {
@@ -11,6 +11,13 @@ export default function Creator() {
       instagram: "https://www.instagram.com/adityakumar.01/",
       twitter: "https://x.com/aadityakumar_01",
     },
+    {
+      name: "Keshav",
+      img: keshavImg,
+      bio: "Professional chaos creator. Writes code that works most of the time and breaks the rest, just to keep life interesting.",
+      instagram: "https://www.instagram.com/keshavkumar7833/",
+      twitter: "https://x.com/keshavbot",
+    },
   ];
 
   return (
@@ -18,11 +25,18 @@ export default function Creator() {
       id="creator"
       className=" bg-gray-100 flex flex-col items-center justify-center p-8"
     >
-      <h1 className="text-3xl font-bold mb-8 text-gray-800">
+      <h1 className="text-5xl font-bold mb-8 text-gray-800">
         About the Creators
       </h1>
+      <div className="w-full  flex flex-col items-center justify-center px-4">
+        <p className="text-center text-2xl md:text-4xl font-extrabold leading-snug z-20 text-rose-500">
+          None in the universe, from angels to demons, burn with obsession like
+          Keshav and Aditya. Reze lurks in the shadows, unaware of the storm
+          consuming them.
+        </p>
+      </div>
 
-      <div className=" gap-8 w-full max-w-5xl">
+      <div className=" gap-8 w-full max-w-5xl flex flex-col md:flex-row">
         {creators.map((creator, index) => (
           <div
             key={index}
