@@ -27,111 +27,113 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tortures = [
   {
-    title: "💄 Lust Lashes",
-    description: "A kiss that burns into your bones. Soft lips, sharp teeth.",
+    title: "💣 Explosive Kiss",
+    description: "One touch, one kiss, and your world trembles under her love.",
     img: tg1,
   },
   {
-    title: "🔥 The Furnace Embrace",
-    description: "Arms that hold too tight, warmth that melts your will.",
-    img: tg13,
-  },
-  {
-    title: "🖤 The Craving Chair",
-    description:
-      "You sit, you ache, you remember everything you ever wanted. But never get it.",
-    img: tg20,
-  },
-  {
-    title: "🩸 Whispers of the Wicked",
-    description: "Words so sweet they rot your sanity.",
-    img: tg11,
-  },
-  {
-    title: "👠 Heels of Regret",
-    description: "You chased her, now she walks all over your soul.",
-    img: tg15,
-  },
-  {
-    title: "🕷 Web of Whispers",
-    description: "You’re wrapped in lies — and you begged for it.",
-    img: tg17,
-  },
-  {
-    title: "🔗 Shackles of Shame",
-    description: "Every time you squirm, the memories tighten.",
+    title: "🔥 Fiery Heart",
+    description: "Her embrace burns hotter than any flame you’ve known.",
     img: tg2,
   },
   {
-    title: "🩶 Mirror of Sin",
-    description: "See yourself as they saw you — and scream.",
-    img: tg6,
-  },
-  {
-    title: "🎭 The Liar's Mask",
-    description: "Smile all you want. It’s stitched on now.",
-    img: tg14,
-  },
-  {
-    title: "🐍 Venom Caress",
-    description: "They loved you — with poison in their touch.",
-    img: tg7,
-  },
-  {
-    title: "🔮 The Guilt Seer",
-    description: "Visions of who you were, and who you destroyed.",
-    img: tg5,
-  },
-  {
-    title: "🧨 Desire Detonator",
-    description: "Every craving is a trap. Every climax a bomb.",
-    img: tg18,
-  },
-  {
-    title: "👅 Tongue of Fire",
-    description: "She spoke your name — now it only screams.",
-    img: tg4,
-  },
-  {
-    title: "🪞 Echoes of Her",
-    description: "She calls from every corner. But never comes back.",
+    title: "🖤 Obsessive Desire",
+    description:
+      "She lingers in your mind, a beautiful threat you can’t escape.",
     img: tg3,
   },
   {
-    title: "🕯 Candle of Longing",
-    description: "Burns slow. Smells sweet. Scars forever.",
+    title: "🩸 Poisoned Sweetness",
+    description: "Every word from her mouth is a deadly seduction.",
+    img: tg4,
+  },
+  {
+    title: "👠 Steps of Danger",
+    description: "Every step she takes leaves your soul trembling.",
+    img: tg5,
+  },
+  {
+    title: "🕷 Tangled in Chaos",
+    description: "Her presence wraps around you, suffocating yet addictive.",
+    img: tg6,
+  },
+  {
+    title: "🔗 Chains of Her Love",
+    description: "Trying to break free only pulls you deeper into her orbit.",
+    img: tg7,
+  },
+  {
+    title: "🩶 Mirror of Obsession",
+    description:
+      "See yourself through her eyes, and realize you’re already hers.",
     img: tg8,
   },
   {
-    title: "🪰 Flies of Regret",
-    description: "They buzz with everything you never said.",
+    title: "🎭 Masked Intentions",
+    description: "Her smile hides destruction, but you want to stay anyway.",
     img: tg9,
   },
   {
-    title: "🛏 Bed of Nails & Whispers",
-    description: "Lie back. Remember. Bleed silently.",
-    img: tg12,
-  },
-  {
-    title: "🔒 Vault of Secrets",
-    description: "You locked them away. Now they scream to get out.",
-    img: tg16,
-  },
-  {
-    title: "⏳ Hourglass of Her Absence",
-    description: "Time flows slower when you’re haunted.",
+    title: "🐍 Venomous Touch",
+    description: "Each caress lingers, intoxicating and dangerous.",
     img: tg10,
   },
   {
-    title: "💔 The Heartcrush Waltz",
-    description: "One dance. One break. Again and again.",
-    img: tg21,
+    title: "🔮 Sight of Madness",
+    description: "She shows you what you crave, and then shatters it.",
+    img: tg11,
   },
   {
-    title: "👁️ The Hunter’s Curse",
+    title: "🧨 Heart Detonation",
+    description: "Every beat with her is a ticking time bomb of desire.",
+    img: tg12,
+  },
+  {
+    title: "👅 Tongue of Fire",
+    description: "Her words scorch your mind, leaving nothing untouched.",
+    img: tg13,
+  },
+  {
+    title: "🪞 Echoes of Reze",
+    description: "Even when gone, her shadow lingers in every thought.",
+    img: tg14,
+  },
+  {
+    title: "🕯 Candle of Temptation",
+    description: "Soft light, sharp edges — she burns in your memory.",
+    img: tg15,
+  },
+  {
+    title: "🪰 Swarm of Memories",
+    description: "Everything you left unsaid swirls around her influence.",
+    img: tg16,
+  },
+  {
+    title: "🛏 Bed of Pain & Pleasure",
+    description: "Surrender to her. Remember every sharp and sweet sensation.",
+    img: tg17,
+  },
+  {
+    title: "🔒 Vault of Secrets",
+    description: "She holds your secrets like explosives, ready to detonate.",
+    img: tg18,
+  },
+  {
+    title: "⏳ Hourglass of Longing",
     description:
-      "You watched her. Followed her. Whispered filth behind her back. Now the eyes never blink, and the screams never stop.",
+      "Time stretches when she’s gone, and explodes when she’s near.",
     img: tg19,
+  },
+  {
+    title: "💔 Heartquake",
+    description:
+      "One touch, one glance, and your heart shatters in her rhythm.",
+    img: tg20,
+  },
+  {
+    title: "👁️ Unblinking Gaze",
+    description: "She watches, waits, and laughs as you fall under her chaos.",
+    img: tg21,
   },
 ];
 
