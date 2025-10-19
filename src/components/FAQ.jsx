@@ -178,7 +178,7 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  <h3 className="text-xl md:text-2xl font-semibold text-emerald-500">
+                  <h3 className="text-xl md:text-2xl font-semibold text-emerald-500 ">
                     {faq.question}
                   </h3>
                   {isOpen ? (
