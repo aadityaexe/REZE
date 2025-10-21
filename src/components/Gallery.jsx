@@ -109,15 +109,16 @@ const tortures = [
     img: tg16,
   },
   {
-    title: "🛏 Bed of Pain & Pleasure",
-    description: "Surrender to her. Remember every sharp and sweet sensation.",
+    title: "🔒 Vault of Secrets",
+    description: "She holds your secrets like explosives, ready to detonate.",
     img: tg17,
   },
   {
-    title: "🔒 Vault of Secrets",
-    description: "She holds your secrets like explosives, ready to detonate.",
+    title: "🛏 Bed of Pain & Pleasure",
+    description: "Surrender to her. Remember every sharp and sweet sensation.",
     img: tg18,
   },
+
   {
     title: "⏳ Hourglass of Longing",
     description:
