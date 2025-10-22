@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "./context/ThemeContext";
 
 // Lazy-loaded components
 const Hero = lazy(() => import("./components/Hero"));
@@ -20,10 +21,10 @@ import video3 from "./assets/Video3.mp4";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-
-      <Suspense
+    <ThemeProvider>
+      <div className="min-h-screen transition-colors duration-200 dark:bg-gray-900">
+        <Navbar />
+        <Suspense
         fallback={
           <div className="flex items-center justify-center h-screen text-center text-gray-500">
             She smiled like she wanted to love you, but her heartbeat whispered
@@ -43,9 +44,9 @@ const App = () => {
         <Creator />
         <FAQ />
       </Suspense>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

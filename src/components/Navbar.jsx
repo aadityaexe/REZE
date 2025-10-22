@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+import { Menu, X, Sun, Moon } from "lucide-react"; // icons
+import { useTheme } from "../context/ThemeContext";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   const toggleMenu = () => setOpen(!open);
 
@@ -17,31 +19,43 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 p-4 rounded-lg text-green-300 font-medium bg-black/200 backdrop-blur-md border-b border-white/10">
-          <a href="#hero">
-            <li className="hover:text-purple-500 transition-colors cursor-pointer">
-              Home
-            </li>
-          </a>
-          <a href="#about">
-            {" "}
-            <li className="hover:text-purple-500 transition-colors cursor-pointer">
-              About
-            </li>
-          </a>
-          <a href="#gallery">
-            {" "}
-            <li className="hover:text-purple-500 transition-colors cursor-pointer">
-              Gallery
-            </li>
-          </a>
-          <a href="#creator">
-            {" "}
-            <li className="hover:text-purple-500 transition-colors cursor-pointer">
-              Creator
-            </li>
-          </a>
-        </ul>
+        <div className="hidden md:flex items-center space-x-8">
+          <ul className="flex space-x-8 p-4 rounded-lg text-green-300 font-medium bg-black/200 backdrop-blur-md border-b border-white/10">
+            <a href="#hero">
+              <li className="hover:text-purple-500 transition-colors cursor-pointer">
+                Home
+              </li>
+            </a>
+            <a href="#about">
+              {" "}
+              <li className="hover:text-purple-500 transition-colors cursor-pointer">
+                About
+              </li>
+            </a>
+            <a href="#gallery">
+              {" "}
+              <li className="hover:text-purple-500 transition-colors cursor-pointer">
+                Gallery
+              </li>
+            </a>
+            <a href="#creator">
+              {" "}
+              <li className="hover:text-purple-500 transition-colors cursor-pointer">
+                Creator
+              </li>
+            </a>
+          </ul>
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg bg-black/200 backdrop-blur-md border-b border-white/10 text-green-300 hover:text-purple-500 transition-colors"
+          >
+            {isDark ? (
+              <Sun className="w-6 h-6" />
+            ) : (
+              <Moon className="w-6 h-6" />
+            )}
+          </button>
+        </div>
 
         {/* Mobile Toggle */}
         <button
