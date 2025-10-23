@@ -165,13 +165,13 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section id="gallery" className="py-16 px-4 text-white">
+  <section id="gallery" className="py-16 px-4 text-white dark:text-white">
       {/* --- TEXT UPDATED HERE --- */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-red-500">
+        <h2 className="text-4xl md:text-5xl font-bold text-red-500 dark:text-red-400">
           An Explosive Tribute to Reze
         </h2>
-        <p className="text-xl md:text-2xl text-gray-900 mt-2">
+        <p className="text-xl md:text-2xl text-gray-900 dark:text-gray-200 mt-2">
           A Fan Page Dedicated to the Bomb Devil
         </p>
       </div>
@@ -182,7 +182,7 @@ const Gallery = () => {
           <div
             key={item.title}
             ref={(el) => (cardsRef.current[index] = el)}
-            className="break-inside-avoid rounded-2xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition-transform duration-300 bg-purple-900"
+            className="break-inside-avoid rounded-2xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition-transform duration-300 bg-purple-900 dark:bg-neutral-800/60"
           >
             <img
               src={item.img}
@@ -190,8 +190,8 @@ const Gallery = () => {
               className="w-full object-cover max-h-[600px]"
             />
             <div className="p-4">
-              <h3 className="text-xl font-bold text-pink-400">{item.title}</h3>
-              <p className="text-gray-300 text-base mt-2">{item.description}</p>
+              <h3 className="text-xl font-bold text-pink-400 dark:text-pink-300">{item.title}</h3>
+              <p className="text-gray-300 dark:text-gray-200 text-base mt-2">{item.description}</p>
             </div>
           </div>
         ))}

@@ -77,7 +77,7 @@ export default function RezeChildhood({ className = "" }) {
       {/* Hero Section */}
       <div
         ref={heroRef}
-        className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-900/60 via-pink-800/40 to-rose-700/30 p-6 md:p-10 shadow-2xl"
+        className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-900/60 via-pink-800/40 to-rose-700/30 p-6 md:p-10 shadow-2xl dark:from-neutral-800/60 dark:via-neutral-800/40 dark:to-neutral-900/30"
       >
         <div className="md:flex md:items-center md:gap-8">
           <img
@@ -87,10 +87,10 @@ export default function RezeChildhood({ className = "" }) {
           />
 
           <div className="text-center md:text-left">
-            <h2 className="mb-2 text-3xl  leading-tight text-blue-700">
+            <h2 className="mb-2 text-3xl  leading-tight text-blue-700 dark:text-blue-200">
               Reze — A Childhood in Rust and Salt
             </h2>
-            <p className="mb-4 max-w-2xl text-xl opacity-90 text-white/80">
+            <p className="mb-4 max-w-2xl text-xl opacity-90 text-white/80 dark:text-white/90">
               A short, wistful snapshot of Reze's early years: mismatched toys,
               whispered promises, and the curious hum of something not quite
               like the rest of her town.
@@ -108,18 +108,18 @@ export default function RezeChildhood({ className = "" }) {
           <article
             key={item.title}
             ref={addCardRef}
-            className="flex flex-col rounded-xl bg-gradient-to-b from-neutral-900/60 to-neutral-900/20 p-5 shadow-lg"
+            className="flex flex-col rounded-xl bg-gradient-to-b from-neutral-900/60 to-neutral-900/20 p-5 shadow-lg dark:from-neutral-800/40 dark:to-neutral-800/10"
           >
             <header className="mb-3">
               <div className="text-sm font-semibold uppercase tracking-widest text-pink-900/80">
                 {item.age}
               </div>
-              <h3 className="text-xl font-bold leading-tight text-pink-300">
+              <h3 className="text-xl font-bold leading-tight text-pink-300 dark:text-pink-200">
                 {item.title}
               </h3>
             </header>
 
-            <p className="flex-grow text-xl text-black ">{item.text}</p>
+              <p className="flex-grow text-xl text-black dark:text-gray-200">{item.text}</p>
           </article>
         ))}
       </div>

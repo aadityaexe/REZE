@@ -79,18 +79,18 @@ export default function ChainsawQuotes() {
 
   return (
     <div id="quotes" className="flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-center text-purple-900 tracking-tight">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-center text-purple-900 tracking-tight dark:text-purple-300">
         Quotes
       </h1>
 
       <div
         ref={containerRef}
-        className="flex items-center justify-center text-black p-6 min-h-[6rem] md:min-h-[11rem] overflow-visible"
+        className="flex items-center justify-center text-black dark:text-white p-6 min-h-[6rem] md:min-h-[11rem] overflow-visible"
       >
         <h1
           ref={textRef}
           key={index}
-          className="text-2xl sm:text-3xl md:text-5xl font-bold text-center leading-relaxed"
+          className="text-2xl sm:text-3xl md:text-5xl font-bold text-center leading-relaxed dark:text-white"
         >
           {quotes[index]}
         </h1>

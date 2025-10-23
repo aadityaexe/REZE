@@ -46,42 +46,42 @@ export default function RezeBio() {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row items-center justify-center pt-14 pb-10 px-6 bg-[#F2F6F7] gap-10"
+      className="flex flex-col md:flex-row items-center justify-center pt-14 pb-10 px-6 bg-[#F2F6F7] dark:bg-gray-900 gap-10"
     >
       {/* Image */}
       <div className="flex-shrink-0 h-96 w-auto md:w-auto md:h-96 rounded-2xl overflow-hidden shadow-lg">
         <img
           src={RezeImg}
           alt="Reze"
-          className="  h-full  hover:scale-105 transition-transform duration-500"
+          className="h-full hover:scale-105 transition-transform duration-500"
         />
       </div>
       {/* Text Content */}
       <div className="max-w-2xl text-center md:text-left">
         <h1
           ref={headingRef}
-          className="text-4xl md:text-6xl font-extrabold text-purple-700 tracking-tight"
+          className="text-4xl md:text-6xl font-extrabold text-purple-700 dark:text-purple-300 tracking-tight"
         >
-          Reze – The Bomb Girl
+          Reze  The Bomb Girl
         </h1>
         <p
           ref={paraRef}
-          className="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-gray-700 dark:text-gray-200 leading-relaxed"
         >
           Reze is one of the most mysterious and captivating characters from
-          <span className="font-semibold text-red-800"> Chainsaw Man</span>.
+          <span className="font-semibold text-red-800 dark:text-red-400"> Chainsaw Man</span>.
           Behind her sweet smile and innocent charm hides a lethal assassin,
-          known as the Bomb Devil’s hybrid. She dances between tenderness and
+          known as the Bomb Devils hybrid. She dances between tenderness and
           destruction with ease, embodying both love and tragedy. Her presence
           in the story is short but unforgettable, leaving fans torn between
           admiration and heartbreak.
         </p>
         <p
           ref={quoteRef}
-          className="mt-8 text-xl italic font-semibold text-green-300"
+          className="mt-8 text-xl italic font-semibold text-green-300 dark:text-green-200"
         >
-          “Love is just another kind of bomb—beautiful, deceptive, and
-          guaranteed to blow you apart.”
+          2Love is just another kind of bomb2beautiful, deceptive, and
+          guaranteed to blow you apart.
         </p>
       </div>
     </section>
