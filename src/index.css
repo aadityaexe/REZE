@@ -11,20 +11,20 @@ body {
 /* Step 1: Define all three fonts */
 @font-face {
   font-family: 'FontOne';
-  src: url('../public/fonts/NoctraDrip-SolidMelt.ttf');
+  src: url('/fonts/NoctraDrip-SolidMelt.ttf');
 
 }
 
 @font-face {
   font-family: 'FontTwo';
 
-  src: url('../public/fonts/Lucy\ Said\ Ok\ Personal\ Use.ttf');
+  src: url('/fonts/Lucy\ Said\ Ok\ Personal\ Use.ttf');
 
 }
 
 @font-face {
   font-family: 'FontThree';
-  src: url('../public/fonts/Street\ Master\ Shadow.otf');
+  src: url('/fonts/Street\ Master\ Shadow.otf');
 
 }
 
