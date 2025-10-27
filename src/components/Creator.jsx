@@ -1,4 +1,4 @@
-import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaGithub } from "react-icons/fa6";
 import adityaImg from "../assets/adityaImg.jpg";
 import keshavImg from "../assets/keshavImg.jpg";
 import twoImg from "../assets/two.jpg";
@@ -10,6 +10,7 @@ export default function Creator() {
       bio: "Designer and developer crafting responsive, modern web experiences. Handles the design and full development.",
       instagram: "https://www.instagram.com/adityakumar.01/",
       twitter: "https://x.com/aadityakumar_01",
+      github: "https://github.com/aadityaexe"
     },
     {
       name: "Keshav",
@@ -17,6 +18,7 @@ export default function Creator() {
       bio: "Professional chaos creator. Writes code that works most of the time and breaks the rest, just to keep life interesting.",
       instagram: "https://www.instagram.com/keshavkumar7833/",
       twitter: "https://x.com/keshavbot",
+      github:"https://github.com/botkeshav"
     },
   ];
 
@@ -56,7 +58,7 @@ export default function Creator() {
                 href={creator.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-black transition-colors"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 <FaXTwitter className="text-2xl" />
               </a>
@@ -67,6 +69,14 @@ export default function Creator() {
                 className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 <FaInstagram className="text-2xl" />
+              </a>
+              <a
+                href={creator.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
+              >
+                <FaGithub className="text-2xl" />
               </a>
             </div>
           </div>
