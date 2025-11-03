@@ -11,13 +11,13 @@ const VideoGallery = ({ video }) => {
         entries.forEach((entry) => {
           const vid = entry.target;
           if (entry.isIntersecting) {
-            vid.play().catch(() => {}); // play when visible
+            vid.play().catch(() => {});
           } else {
-            vid.pause(); // pause when not visible
+            vid.pause();
           }
         });
       },
-      { threshold: 0.5 } // 50% of video should be visible to play
+      { threshold: 0.5 }
     );
 
     videoRefs.current.forEach((vid) => {
