@@ -1,18 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "https://cdn.skypack.dev/gsap";
 import RazeC from "../assets/RezeC.jpg";
-/**
- * RezeChildhood.jsx
- * A single-file React component using Tailwind CSS and GSAP for animations.
- * This component displays a character's childhood timeline.
- */
+
 export default function RezeChildhood({ className = "" }) {
   const rootRef = useRef(null);
   const heroRef = useRef(null);
   const cardsRef = useRef([]);
-  cardsRef.current = []; // Reset on each render
-
-  // Data for the timeline cards. This could be passed as a prop.
+  cardsRef.current = [];
   const timeline = [
     {
       age: "Age 4",
