@@ -11,8 +11,14 @@ export default function ChainsawQuotes() {
     "The world is a dark place, but darker still is the human heart.",
     "Happiness is fleeting, but the blood on your hands lingers.",
     "Love or control—it’s all the same leash.",
+    "Hope is the sweetest poison—they drink it until it kills them.",
     "Demons aren’t the ones to fear. People are worse.",
     "Chainsaws don’t care what they cut. Neither do devils.",
+    "Blood keeps me alive, but pain reminds me I still deserve it.",
+    "Dreams don’t come true. They just cost more every time you chase them.",
+    "If hell had a heart, it would beat just like mine—loud, ugly, and hungry.",
+    "The only thing sharper than the chainsaw is the will to keep using it.",
+    "Love is just another deal with the devil—you pay, no refunds."
   ];
 
   const [index, setIndex] = useState(0);
