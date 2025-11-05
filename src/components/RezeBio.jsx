@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
-import RezeImg from "../assets/Reze0.jpg"; // <-- place your Reze image in assets
+import RezeImg from "../assets/Reze0.jpg";
 
 export default function RezeBio() {
   const headingRef = useRef(null);
