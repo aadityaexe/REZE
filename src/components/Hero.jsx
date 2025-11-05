@@ -1,20 +1,16 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-// 1. Import the SplitText plugin
 import { SplitText } from "gsap/SplitText";
 import RezeLm from "../assets/RezeLm.jpg";
 import RezeSm from "../assets/RezeSm.jpg";
 
-// 2. Register the plugin with GSAP
 gsap.registerPlugin(SplitText);
 
 export default function Hero() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // ✅ Use GSAP context for scoped animations and clean teardown
     const ctx = gsap.context(() => {
-      // ✅ Create SplitText instance
       const split = new SplitText(".hero-text", {
         type: "chars, words",
         charsClass: "char-style inline-block",
@@ -31,12 +27,8 @@ export default function Hero() {
         stagger: 0.04,
         duration: 1.2,
       });
-
-      // Optional bounce or fade-out, if needed later
-      // tl.to(split.chars, { opacity: 0, y: -20, stagger: 0.03 });
     }, containerRef);
 
-    // ✅ Cleanup SplitText and revert GSAP context
     return () => ctx.revert();
   }, []);
 
