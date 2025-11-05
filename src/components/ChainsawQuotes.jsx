@@ -24,7 +24,6 @@ export default function ChainsawQuotes() {
   const containerRef = useRef(null);
   const textRef = useRef(null);
 
-  // Animate "fade in" whenever index changes
   useGSAP(
     () => {
       if (!textRef.current) return;
@@ -62,7 +61,6 @@ export default function ChainsawQuotes() {
     { dependencies: [index], scope: containerRef }
   );
 
-  // Animate fade out + cycle quotes
   useEffect(() => {
     if (!textRef.current) return;
 
