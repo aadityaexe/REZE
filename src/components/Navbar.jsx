@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
