@@ -3,7 +3,6 @@ import { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-// Register GSAP plugin
 gsap.registerPlugin(useGSAP);
 
 export default function ChainsawQuotes() {
@@ -18,7 +17,7 @@ export default function ChainsawQuotes() {
     "Dreams don’t come true. They just cost more every time you chase them.",
     "If hell had a heart, it would beat just like mine—loud, ugly, and hungry.",
     "The only thing sharper than the chainsaw is the will to keep using it.",
-    "Love is just another deal with the devil—you pay, no refunds."
+    "Love is just another deal with the devil—you pay, no refunds.",
   ];
 
   const [index, setIndex] = useState(0);
