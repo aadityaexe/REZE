@@ -3,16 +3,17 @@ import { gsap } from "gsap";
 import MakimaImg1 from "../assets/Makima.jpg";
 import MakimaImg2 from "../assets/makima3.jpg";
 import MakimaImg3 from "../assets/makima2.jpg";
+import TiltCard from "./ui/TiltCard";
 
 export default function Makima({
   images = [MakimaImg1, MakimaImg2, MakimaImg3],
   alt = "Makima",
-  // replace with any text
 }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Intro animation
       gsap.from(".card", {
         opacity: 0,
         y: 50,
@@ -20,17 +21,6 @@ export default function Makima({
         duration: 0.7,
         stagger: 0.15,
         ease: "power3.out",
-      });
-
-      // Hover animation
-      const cards = gsap.utils.toArray(".card");
-      cards.forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-          gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
-        });
-        card.addEventListener("mouseleave", () => {
-          gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
-        });
       });
     }, containerRef);
 
@@ -50,34 +40,37 @@ export default function Makima({
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
         {/* Left: image only */}
-        <article className="card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <TiltCard>
           <img
             src={images[0]}
             alt={`${alt} left`}
             className="w-auto max-w-full h-auto object-contain block"
             onError={(e) => (e.currentTarget.style.opacity = 0.6)}
           />
-        </article>
+        </TiltCard>
 
-        {/* Middle: image + cheeky text overlay */}
-        <article className="card relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center">
+        {/* Middle: image + cheeky text overlay (moved structural classes to TiltCard) 
+            Note: The original had 'relative flex items-center justify-center' on the card.
+            We pass those to our helper. 
+        */}
+        <TiltCard className="relative flex items-center justify-center">
           <img
             src={images[1]}
             alt={`${alt} center`}
             className="w-auto max-w-full h-auto object-contain block"
             onError={(e) => (e.currentTarget.style.opacity = 0.6)}
           />
-        </article>
+        </TiltCard>
 
         {/* Right: image only */}
-        <article className="card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <TiltCard>
           <img
             src={images[2]}
             alt={`${alt} right`}
             className="w-auto max-w-full h-auto object-contain block"
             onError={(e) => (e.currentTarget.style.opacity = 0.6)}
           />
-        </article>
+        </TiltCard>
       </div>
 
       <p className="max-w-6xl mx-auto mt-6 text-4xl text-orange-600 text-center">
