@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TiltCard from "./ui/TiltCard";
 import tg1 from "../assets/Reze0.jpg";
 import tg2 from "../assets/Reze1.jpg";
 import tg3 from "../assets/Reze2.jpg";
@@ -179,10 +180,10 @@ const Gallery = () => {
 
       <div className="columns-1 sm:columns-2 lg:columns-3 2xl:columns-4 gap-6 max-w-7xl mx-auto px-4 space-y-6">
         {tortures.map((item, index) => (
-          <div
+          <TiltCard
             key={item.title}
             ref={(el) => (cardsRef.current[index] = el)}
-            className="break-inside-avoid rounded-2xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition-transform duration-300 bg-purple-900"
+            className="break-inside-avoid bg-purple-900 hover:scale-[1.03]"
           >
             <img
               src={item.img}
@@ -193,7 +194,7 @@ const Gallery = () => {
               <h3 className="text-xl font-bold text-pink-400">{item.title}</h3>
               <p className="text-gray-300 text-base mt-2">{item.description}</p>
             </div>
-          </div>
+          </TiltCard>
         ))}
       </div>
     </section>
