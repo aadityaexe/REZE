@@ -1,8 +1,8 @@
+
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
-import RezeLm from "../assets/RezeLm.jpg";
-import RezeSm from "../assets/RezeSm.jpg";
+import { otherImages } from "../assets/images";
 
 gsap.registerPlugin(SplitText);
 
@@ -41,11 +41,11 @@ export default function Hero() {
       {/* Backgrounds */}
       <div
         className="absolute inset-0 bg-cover bg-center md:hidden"
-        style={{ backgroundImage: `url(${RezeSm})` }}
+        style={{ backgroundImage: `url(${otherImages.RezeSm})` }}
       ></div>
       <div
         className="absolute inset-0 bg-cover bg-center hidden md:block"
-        style={{ backgroundImage: `url(${RezeLm})` }}
+        style={{ backgroundImage: `url(${otherImages.RezeLm})` }}
       ></div>
 
       {/* Content */}

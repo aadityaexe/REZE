@@ -1,20 +1,27 @@
 import { FaInstagram, FaXTwitter, FaGithub } from "react-icons/fa6";
-import adityaImg from "../assets/adityaImg.jpg";
-import keshavImg from "../assets/keshavImg.jpg";
+import React, { useEffect, useRef } from "react";
+import { otherImages } from "../assets/images";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Creator() {
   const creators = [
     {
-      name: "Aditya Choudhary",
-      img: adityaImg,
-      bio: "Designer and developer crafting responsive, modern web experiences. Handles the design and full development.",
+      name: "Aditya",
+      role: "Lead Developer & Visionary",
+      img: otherImages.adityaImg,
+      bio: "The mastermind behind the code. Every pixel, every animation, every line of logic flows through his vision.",
       instagram: "https://www.instagram.com/adityakumar.01/",
       twitter: "https://x.com/aadityakumar_01",
       github: "https://github.com/aadityaexe",
     },
     {
       name: "Keshav",
-      img: keshavImg,
-      bio: "Professional chaos creator. Writes code that works most of the time and breaks the rest, just to keep life interesting.",
+      role: "Creative Director & Strategist",
+      img: otherImages.keshavImg,
+      bio: "The soul of the design. He shapes the aesthetic and ensures the vibe is nothing short of explosive.",
       instagram: "https://www.instagram.com/keshavkumar7833/",
       twitter: "https://x.com/keshavbot",
       github: "https://github.com/botkeshav",

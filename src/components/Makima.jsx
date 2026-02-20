@@ -1,12 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import MakimaImg1 from "../assets/Makima.jpg";
-import MakimaImg2 from "../assets/makima3.jpg";
-import MakimaImg3 from "../assets/makima2.jpg";
+import { makimaImages } from "../assets/images";
 import TiltCard from "./ui/TiltCard";
 
 export default function Makima({
-  images = [MakimaImg1, MakimaImg2, MakimaImg3],
+  images = [makimaImages.Makima1, makimaImages.Makima2, makimaImages.Makima3],
   alt = "Makima",
 }) {
   const containerRef = useRef(null);

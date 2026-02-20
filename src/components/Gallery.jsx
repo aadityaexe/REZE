@@ -2,27 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TiltCard from "./ui/TiltCard";
-import tg1 from "../assets/Reze0.jpg";
-import tg2 from "../assets/Reze1.jpg";
-import tg3 from "../assets/Reze2.jpg";
-import tg4 from "../assets/Reze3.jpg";
-import tg5 from "../assets/Reze4.jpg";
-import tg6 from "../assets/Reze5.jpg";
-import tg7 from "../assets/Reze6.jpg";
-import tg8 from "../assets/Reze7.jpg";
-import tg9 from "../assets/Reze8.jpg";
-import tg10 from "../assets/Reze9.jpg";
-import tg11 from "../assets/Reze10.jpg";
-import tg12 from "../assets/Reze11.jpg";
-import tg13 from "../assets/Reze12.jpg";
-import tg14 from "../assets/Reze13.jpg";
-import tg15 from "../assets/Reze14.jpg";
-import tg16 from "../assets/Reze15.jpg";
-import tg17 from "../assets/Reze16.jpg";
-import tg18 from "../assets/Reze17.jpg";
-import tg19 from "../assets/Reze18.jpg";
-import tg20 from "../assets/Reze19.jpg";
-import tg21 from "../assets/Reze20.jpg";
+import { rezeImages } from "../assets/images";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,112 +10,112 @@ const tortures = [
   {
     title: "💣 Explosive Kiss",
     description: "One touch, one kiss, and your world trembles under her love.",
-    img: tg1,
+    img: rezeImages[0],
   },
   {
     title: "🔥 Fiery Heart",
     description: "Her embrace burns hotter than any flame you’ve known.",
-    img: tg2,
+    img: rezeImages[1],
   },
   {
     title: "🖤 Obsessive Desire",
     description:
       "She lingers in your mind, a beautiful threat you can’t escape.",
-    img: tg3,
+    img: rezeImages[2],
   },
   {
     title: "🩸 Poisoned Sweetness",
     description: "Every word from her mouth is a deadly seduction.",
-    img: tg4,
+    img: rezeImages[3],
   },
   {
     title: "👠 Steps of Danger",
     description: "Every step she takes leaves your soul trembling.",
-    img: tg5,
+    img: rezeImages[4],
   },
   {
     title: "🕷 Tangled in Chaos",
     description: "Her presence wraps around you, suffocating yet addictive.",
-    img: tg6,
+    img: rezeImages[5],
   },
   {
     title: "🔗 Chains of Her Love",
     description: "Trying to break free only pulls you deeper into her orbit.",
-    img: tg7,
+    img: rezeImages[6],
   },
   {
     title: "🩶 Mirror of Obsession",
     description:
       "See yourself through her eyes, and realize you’re already hers.",
-    img: tg8,
+    img: rezeImages[7],
   },
   {
     title: "🎭 Masked Intentions",
     description: "Her smile hides destruction, but you want to stay anyway.",
-    img: tg9,
+    img: rezeImages[8],
   },
   {
     title: "🐍 Venomous Touch",
     description: "Each caress lingers, intoxicating and dangerous.",
-    img: tg10,
+    img: rezeImages[9],
   },
   {
     title: "🔮 Sight of Madness",
     description: "She shows you what you crave, and then shatters it.",
-    img: tg11,
+    img: rezeImages[10],
   },
   {
     title: "🧨 Heart Detonation",
     description: "Every beat with her is a ticking time bomb of desire.",
-    img: tg12,
+    img: rezeImages[11],
   },
   {
     title: "👅 Tongue of Fire",
     description: "Her words scorch your mind, leaving nothing untouched.",
-    img: tg13,
+    img: rezeImages[12],
   },
   {
     title: "🪞 Echoes of Reze",
     description: "Even when gone, her shadow lingers in every thought.",
-    img: tg14,
+    img: rezeImages[13],
   },
   {
     title: "🕯 Candle of Temptation",
     description: "Soft light, sharp edges — she burns in your memory.",
-    img: tg15,
+    img: rezeImages[14],
   },
   {
     title: "🪰 Swarm of Memories",
     description: "Everything you left unsaid swirls around her influence.",
-    img: tg16,
+    img: rezeImages[15],
   },
   {
     title: "🔒 Vault of Secrets",
     description: "She holds your secrets like explosives, ready to detonate.",
-    img: tg17,
+    img: rezeImages[16],
   },
   {
     title: "🛏 Bed of Pain & Pleasure",
     description: "Surrender to her. Remember every sharp and sweet sensation.",
-    img: tg18,
+    img: rezeImages[17],
   },
 
   {
     title: "⏳ Hourglass of Longing",
     description:
       "Time stretches when she’s gone, and explodes when she’s near.",
-    img: tg19,
+    img: rezeImages[18],
   },
   {
     title: "💔 Heartquake",
     description:
       "One touch, one glance, and your heart shatters in her rhythm.",
-    img: tg20,
+    img: rezeImages[19],
   },
   {
     title: "👁️ Unblinking Gaze",
     description: "She watches, waits, and laughs as you fall under her chaos.",
-    img: tg21,
+    img: rezeImages[20],
   },
 ];
 

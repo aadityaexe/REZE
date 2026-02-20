@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import { gsap } from "https://cdn.skypack.dev/gsap";
-import RazeC from "../assets/RezeC.jpg";
+import { gsap } from "gsap";
+import { otherImages } from "../assets/images";
 
 export default function RezeChildhood({ className = "" }) {
   const rootRef = useRef(null);
@@ -75,7 +75,7 @@ export default function RezeChildhood({ className = "" }) {
       >
         <div className="md:flex md:items-center md:gap-8">
           <img
-            src={RazeC}
+            src={otherImages.RezeC}
             alt="Reze portrait — childhood"
             className="mx-auto mb-4 h-48 w-48 flex-shrink-0 rounded-xl object-cover ring-4 ring-white/10 md:mb-0"
           />
